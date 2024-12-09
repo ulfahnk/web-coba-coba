@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio - coba coba</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Language Selector -->
+  <div class="absolute top-4 right-4">
+    <select id="language-select" class="p-2 border rounded-md">
+      <option value="en">English</option>
+      <option value="id">Indonesia</option>
+    </select>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white text-center py-16">
+    <h1 id="hero-title" class="text-4xl md:text-5xl font-extrabold">Hello, I'm <span class="text-yellow-400">Ulfah</span></h1>
+    <p id="hero-subtitle" class="mt-4 text-lg md:text-xl">A passionate web developer based in Sumedang</p>
+    <p id="hero-description" class="mt-2 text-md">[Add some personal slogan or mission]</p>
+    <a href="#projects" class="mt-6 inline-block bg-yellow-400 text-indigo-600 py-2 px-6 rounded-lg hover:bg-yellow-500 transition">See My Work</a>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16 px-4 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 id="about-title" class="text-3xl font-semibold">About Me</h2>
+      <p id="about-text" class="mt-4 text-lg text-gray-700">I am a dedicated web developer with experience in building scalable web applications. I love creating beautiful, functional websites and always keep learning the latest technologies.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 id="projects-title" class="text-3xl font-semibold">My Projects</h2>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 id="project1-title" class="text-xl font-semibold">Project 1</h3>
+          <p id="project1-description" class="mt-2 text-gray-600">Description of Project 1. A brief explanation of the project and the technologies used.</p>
+          <a href="#" class="mt-4 text-indigo-600 hover:text-indigo-800">View Project</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 id="project2-title" class="text-xl font-semibold">Project 2</h3>
+          <p id="project2-description" class="mt-2 text-gray-600">Description of Project 2. A brief explanation of the project and the technologies used.</p>
+          <a href="#" class="mt-4 text-indigo-600 hover:text-indigo-800">View Project</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 id="project3-title" class="text-xl font-semibold">Project 3</h3>
+          <p id="project3-description" class="mt-2 text-gray-600">Description of Project 3. A brief explanation of the project and the technologies used.</p>
+          <a href="#" class="mt-4 text-indigo-600 hover:text-indigo-800">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-indigo-600 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 id="contact-title" class="text-3xl font-semibold">Contact Me</h2>
+      <p id="contact-text" class="mt-4 text-lg">Feel free to reach out to me for any project inquiries or collaborations.</p>
+      <form action="#" class="mt-8">
+        <input type="text" class="bg-white text-gray-900 p-3 rounded-md w-full sm:w-1/2 mx-auto" placeholder="Your Name" required>
+        <input type="email" class="bg-white text-gray-900 p-3 rounded-md w-full sm:w-1/2 mx-auto mt-4" placeholder="Your Email" required>
+        <textarea class="bg-white text-gray-900 p-3 rounded-md w-full sm:w-1/2 mx-auto mt-4" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="mt-4 inline-block bg-yellow-400 text-indigo-600 py-2 px-6 rounded-lg hover:bg-yellow-500 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script for Language Switch -->
+  <script src="script.js"></script>
+</body>
+</html>
